@@ -49,11 +49,11 @@ except Exception as e:
 
 # 2. Sidebar para entradas del usuario
 st.sidebar.header("📝 Ingresa tus Resultados")
-op = st.sidebar.slider("Apertura (op)", min_value=0.0, max_value=120.0, value=69.6, step=0.1)
-co = st.sidebar.slider("Conciencia (co)", min_value=0.0, max_value=120.0, value=76.9, step=0.1)
-ex = st.sidebar.slider("Extroversión (ex)", min_value=0.0, max_value=120.0, value=50.9, step=0.1)
-ag = st.sidebar.slider("Amabilidad (ag)", min_value=0.0, max_value=120.0, value=67.7, step=0.1)
-ne = st.sidebar.slider("Neuroticismo (ne)", min_value=0.0, max_value=120.0, value=102.7, step=0.1)
+op = st.sidebar.slider("Apertura (op)", min_value=0.0, max_value=120.0, value=0.0, step=0.1)
+co = st.sidebar.slider("Conciencia (co)", min_value=0.0, max_value=120.0, value=0.0, step=0.1)
+ex = st.sidebar.slider("Extroversión (ex)", min_value=0.0, max_value=120.0, value=0.0, step=0.1)
+ag = st.sidebar.slider("Amabilidad (ag)", min_value=0.0, max_value=120.0, value=0.0, step=0.1)
+ne = st.sidebar.slider("Neuroticismo (ne)", min_value=0.0, max_value=120.0, value=0.0, step=0.1)
 
 # Crear dataframe de entrada
 mis_datos = pd.DataFrame([{'op': op, 'co': co, 'ex': ex, 'ag': ag, 'ne': ne}])
